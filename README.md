@@ -6,4 +6,4 @@ Dashboard for RpiControl project.
 
 Copyright (c) Mikhnovich Oleg. All rights reserved.
 
-Licensed under the [Apache-2.0](LICENSE.txt) License.
+Licensed under the [Apache-2.0](LICENSE) License.
