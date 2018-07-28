@@ -1,6 +1,5 @@
 package com.mikhnovich.oleg.app;
 
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -15,18 +14,15 @@ public class RootController {
     @FXML
     public Button setupDeviceTab;
     @FXML
-    public Button examplesTab;
-    @FXML
     public AnchorPane tabsStage;
 
-    public void myDevicesTabClick(ActionEvent actionEvent) throws IOException {
+    public void myDevicesTabClick() throws IOException {
         Node pane = FXMLLoader.load(getClass().getResource("myDevices.fxml"));
         tabsStage.getChildren().setAll(pane);
     }
 
-    public void setupDeviceTabClick(ActionEvent actionEvent) {
-    }
-
-    public void examplesTabClick(ActionEvent actionEvent) {
+    public void setupDeviceTabClick() throws IOException {
+        Node pane = FXMLLoader.load(getClass().getResource("setupNewDevice.fxml"));
+        tabsStage.getChildren().setAll(pane);
     }
 }

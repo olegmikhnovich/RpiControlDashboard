@@ -26,14 +26,6 @@
                      <Font size="16.0" />
                   </font>
                </Button>
-               <Button fx:id="examplesTab" layoutX="-6.0" layoutY="76.0" mnemonicParsing="false" onAction="#examplesTabClick" text="Examples" textAlignment="JUSTIFY" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="76.0">
-                  <effect>
-                     <Glow />
-                  </effect>
-                  <font>
-                     <Font size="16.0" />
-                  </font>
-               </Button>
             </children>
          </AnchorPane>
        <AnchorPane fx:id="tabsStage" minHeight="0.0" minWidth="0.0" />

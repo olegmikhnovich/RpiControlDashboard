@@ -9,17 +9,14 @@ import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
 import javafx.collections.transformation.SortedList;
 import javafx.concurrent.Task;
-import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 
-import java.net.InetAddress;
-import java.net.NetworkInterface;
-import java.net.SocketException;
-import java.net.UnknownHostException;
+import java.io.IOException;
+import java.net.*;
 import java.util.ArrayList;
 import java.util.Enumeration;
 
@@ -47,7 +44,19 @@ public class MyDevicesController {
         this.scanAllDevices();
     }
 
-    public void updateData(ActionEvent actionEvent) {
+    public void loadDevicePortal() {
+        DeviceModel deviceModel = devicesTable.getSelectionModel().getSelectedItem();
+        try {
+            if(deviceModel != null) {
+                java.awt.Desktop.getDesktop().browse(
+                        URI.create("http://" + deviceModel.getIpv4().getHostName() + ":8080"));
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void updateData() {
         this.scanAllDevices();
     }
 

@@ -15,7 +15,7 @@
         </font>
     </Text>
     <TextField fx:id="filterField" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
-    <TableView fx:id="devicesTable" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
+    <TableView fx:id="devicesTable" onMouseClicked="#loadDevicePortal" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="40.0">
         <columns>
             <TableColumn fx:id="nameColumn" prefWidth="75.0" text="Name" />
             <TableColumn fx:id="typeColumn" prefWidth="75.0" text="Type" />
