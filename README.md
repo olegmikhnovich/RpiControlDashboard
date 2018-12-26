@@ -1,4 +1,6 @@
-# RpiControlDashboard
+# RpiControlDashboard (Deprecated)
+[![Status](https://img.shields.io/badge/status-deprecated-red.svg)](https://github.com/olegmikhnovich/RpiControl#old-versions)
+
 Dashboard for RpiControl project.
 
 This project contains 3 modules
